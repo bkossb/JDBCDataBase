@@ -26,7 +26,6 @@ public class DataBaseDemoApplication implements CommandLineRunner {
         logger.info("\nUser name ->{}", dao.findByName("Ranga"));
         logger.info("\nUser location ->{}", dao.findByLocation("Hydrebad"));
         logger.info("\nDelete user by id -> Nr rows of deleted {}", dao.deleteById(10001));
-
         logger.info("Inserting 10006", dao.insertPerson(new Person(10006, "Bartek", "Lublin", new Date())));
         logger.info("Update 10003", dao.updatePerson(new Person(10003, "ChangeName", "ChangeLoc", new Date())));
     }
